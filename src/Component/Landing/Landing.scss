@@ -60,6 +60,10 @@ $blue: #00d5ff;
     }
   }
 
+  .Sub1 {
+    margin-bottom: 5vh;
+  }
+
   .sub2Prices {
     flex-direction: column;
     height: 100%;
@@ -71,7 +75,7 @@ $blue: #00d5ff;
     border-bottom: 1px solid #eeefee;
 
     .priceBox {
-      height: 30vh;
+      height: 40vh;
       &:nth-child(1) {
         background: $blue;
       }
@@ -134,10 +138,7 @@ $blue: #00d5ff;
       }
       .sub5Text {
         width: 90%;
-
-        p {
-          line-height: 31px;
-        }
+        margin-bottom: 5vh;
       }
     }
   }
