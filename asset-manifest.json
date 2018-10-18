@@ -1,13 +1,13 @@
 {
-  "main.css": "/trainer/static/css/main.e772f48d.chunk.css",
-  "main.js": "/trainer/static/js/main.6257497f.chunk.js",
-  "main.js.map": "/trainer/static/js/main.6257497f.chunk.js.map",
+  "main.css": "/trainer/static/css/main.9dc23a49.chunk.css",
+  "main.js": "/trainer/static/js/main.627f9fc6.chunk.js",
+  "main.js.map": "/trainer/static/js/main.627f9fc6.chunk.js.map",
   "static/js/1.c89e66e9.chunk.js": "/trainer/static/js/1.c89e66e9.chunk.js",
   "static/js/1.c89e66e9.chunk.js.map": "/trainer/static/js/1.c89e66e9.chunk.js.map",
   "runtime~main.js": "/trainer/static/js/runtime~main.3bf535f0.js",
   "runtime~main.js.map": "/trainer/static/js/runtime~main.3bf535f0.js.map",
-  "static/css/main.e772f48d.chunk.css.map": "/trainer/static/css/main.e772f48d.chunk.css.map",
+  "static/css/main.9dc23a49.chunk.css.map": "/trainer/static/css/main.9dc23a49.chunk.css.map",
   "index.html": "/trainer/index.html",
-  "precache-manifest.21c351854f6582053aec3cd89c5f96c9.js": "/trainer/precache-manifest.21c351854f6582053aec3cd89c5f96c9.js",
+  "precache-manifest.b1c30457f1ac16ca8c757063160ae1d2.js": "/trainer/precache-manifest.b1c30457f1ac16ca8c757063160ae1d2.js",
   "service-worker.js": "/trainer/service-worker.js"
 }
