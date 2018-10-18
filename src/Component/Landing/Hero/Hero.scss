@@ -1,0 +1,57 @@
+$highlight: #00ff7f;
+$text: #333;
+$lightText: #8d8d8d;
+$blue: #00d5ff;
+
+.Hero {
+  height: 100vh;
+  .HeroImg {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),
+      url("https://images.pexels.com/photos/136409/pexels-photo-136409.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+        no-repeat center 0 / cover;
+    height: 100%;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .heroText {
+      text-align: center;
+      width: 50%;
+      color: #fff;
+
+      h1 {
+        font-size: 5em;
+        margin-bottom: 2vh;
+        span {
+          color: $highlight;
+        }
+      }
+
+      h2 {
+        width: 80%;
+        margin: 0 auto;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+    }
+
+    .heroButtons {
+      display: flex;
+      justify-content: center;
+
+      h5 {
+        margin: 2vh 0.5vw;
+        border: 1px solid #fff;
+        border-radius: 35px;
+        padding: 2vh 3vw;
+        cursor: pointer;
+
+        &:nth-child(1) {
+          border: 1px solid $highlight;
+        }
+      }
+    }
+  }
+}

@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import "./Sub1.scss";
+
 class Sub1 extends Component {
   render() {
     return (

@@ -1,0 +1,75 @@
+$highlight: #00ff7f;
+$text: #333;
+$lightText: #8d8d8d;
+$blue: #00d5ff;
+
+.Sub2 {
+  height: 100%;
+
+  .sub2Img {
+    height: 45vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url("https://images.pexels.com/photos/28061/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
+        no-repeat center 20% / cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10vw;
+    color: #fff;
+    text-transform: uppercase;
+    h2 {
+      margin: 0;
+      font-size: 48px;
+      span {
+        color: $highlight;
+      }
+    }
+
+    h3 {
+      font-weight: 400;
+      font-size: 36px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.sub2Prices {
+  height: 40vh;
+  width: 70%;
+  margin: 0 auto;
+  transform: translateY(-13vh);
+  display: flex;
+  background: linear-gradient(90deg, $blue, #55d29b, $highlight);
+
+  .priceBox {
+    // background: #00d5ff;
+    flex-grow: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &:nth-child(2) {
+      box-shadow: 0 15px 25px -7px rgba(0, 0, 0, 0.8);
+      z-index: 2;
+    }
+
+    &:hover {
+      box-shadow: 0 15px 25px -7px rgba(0, 0, 0, 0.2),
+        0 -12px 10px -10px rgba(0, 0, 0, 0.01);
+      transition-duration: 0.5s;
+    }
+
+    .priceText {
+      width: 90%;
+      margin: 0 auto;
+      color: $lightText;
+      color: #fff;
+
+      h4 {
+        font-weight: 400;
+      }
+    }
+  }
+}

@@ -2,6 +2,8 @@ import React, { Component } from "react";
 
 import Price from "./Price/Price";
 
+import "./Sub2.scss";
+
 class Sub2 extends Component {
   render() {
     return (

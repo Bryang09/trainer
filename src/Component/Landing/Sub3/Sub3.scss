@@ -1,0 +1,70 @@
+$highlight: #00ff7f;
+$text: #333;
+$lightText: #8d8d8d;
+$blue: #00d5ff;
+
+.Sub3 {
+  height: 70vh;
+  // background: $text;
+  display: flex;
+
+  .sub3Img {
+    width: 45%;
+    height: 100%;
+    background: url("https://images.pexels.com/photos/136410/pexels-photo-136410.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
+      no-repeat center center / cover;
+    margin-left: 1vw;
+  }
+
+  .sub3Text {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 8vw;
+
+    .schedule {
+      // background: red;
+      width: 100%;
+      height: 80%;
+
+      .event {
+        // background: green;
+        display: flex;
+        height: 25%;
+        border-bottom: 1px solid $lightText;
+
+        .left {
+          width: 50%;
+
+          h3 {
+            border-left: 3px solid $blue;
+            padding-left: 0.5vw;
+          }
+
+          h4 {
+            font-weight: 400;
+            color: $lightText;
+            margin-bottom: 2vh;
+          }
+        }
+        .right {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          width: 50%;
+
+          h5 {
+            border: 1px solid $highlight;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 35px;
+            padding: 1vh 2vh;
+          }
+        }
+      }
+    }
+  }
+}

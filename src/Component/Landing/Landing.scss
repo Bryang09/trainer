@@ -3,224 +3,6 @@ $text: #333;
 $lightText: #8d8d8d;
 $blue: #00d5ff;
 
-// HERO
-
-.Hero {
-  height: 100vh;
-  .HeroImg {
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),
-      url("https://images.pexels.com/photos/136409/pexels-photo-136409.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
-        no-repeat center 0 / cover;
-    height: 100%;
-    background-attachment: fixed;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-
-    .heroText {
-      text-align: center;
-      width: 50%;
-      color: #fff;
-
-      h1 {
-        font-size: 5em;
-        margin-bottom: 2vh;
-        span {
-          color: $highlight;
-        }
-      }
-
-      h2 {
-        width: 80%;
-        margin: 0 auto;
-        font-weight: 400;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-      }
-    }
-
-    .heroButtons {
-      display: flex;
-      justify-content: center;
-
-      h5 {
-        margin: 2vh 0.5vw;
-        border: 1px solid #fff;
-        border-radius: 35px;
-        padding: 2vh 3vw;
-        cursor: pointer;
-
-        &:nth-child(1) {
-          border: 1px solid $highlight;
-        }
-      }
-    }
-  }
-}
-
-// SUB1
-
-.Sub1 {
-  height: 45vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  h1 {
-    color: #333;
-    border-bottom: 2px solid;
-  }
-
-  p {
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
-    color: $lightText;
-  }
-}
-
-// SUB2
-
-.Sub2 {
-  height: 100%;
-
-  .sub2Img {
-    height: 45vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-      url("https://images.pexels.com/photos/28061/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
-        no-repeat center 20% / cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 10vw;
-    color: #fff;
-    text-transform: uppercase;
-    h2 {
-      margin: 0;
-      font-size: 48px;
-      span {
-        color: $highlight;
-      }
-    }
-
-    h3 {
-      font-weight: 400;
-      font-size: 36px;
-      margin-bottom: 0;
-    }
-  }
-}
-
-.sub2Prices {
-  height: 40vh;
-  width: 70%;
-  margin: 0 auto;
-  transform: translateY(-13vh);
-  display: flex;
-  background: linear-gradient(90deg, $blue, #55d29b, $highlight);
-
-  .priceBox {
-    // background: #00d5ff;
-    flex-grow: 1;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    &:nth-child(2) {
-      box-shadow: 0 15px 25px -7px rgba(0, 0, 0, 0.8);
-      z-index: 2;
-    }
-
-    &:hover {
-      box-shadow: 0 15px 25px -7px rgba(0, 0, 0, 0.2),
-        0 -12px 10px -10px rgba(0, 0, 0, 0.01);
-      transition-duration: 0.5s;
-    }
-
-    .priceText {
-      width: 90%;
-      margin: 0 auto;
-      color: $lightText;
-      color: #fff;
-
-      h4 {
-        font-weight: 400;
-      }
-    }
-  }
-}
-
-//  SUB3
-
-.Sub3 {
-  height: 70vh;
-  // background: $text;
-  display: flex;
-
-  .sub3Img {
-    width: 45%;
-    height: 100%;
-    background: url("https://images.pexels.com/photos/136410/pexels-photo-136410.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
-      no-repeat center center / cover;
-    margin-left: 1vw;
-  }
-
-  .sub3Text {
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 8vw;
-
-    .schedule {
-      // background: red;
-      width: 100%;
-      height: 80%;
-
-      .event {
-        // background: green;
-        display: flex;
-        height: 25%;
-        border-bottom: 1px solid $lightText;
-
-        .left {
-          width: 50%;
-
-          h3 {
-            border-left: 3px solid $blue;
-            padding-left: 0.5vw;
-          }
-
-          h4 {
-            font-weight: 400;
-            color: $lightText;
-            margin-bottom: 2vh;
-          }
-        }
-        .right {
-          display: flex;
-          align-items: center;
-          justify-content: flex-end;
-          width: 50%;
-
-          h5 {
-            border: 1px solid $highlight;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 35px;
-            padding: 1vh 2vh;
-          }
-        }
-      }
-    }
-  }
-}
-
 @media screen and (min-width: 1171px) {
   .sub2Prices {
     width: 80%;
@@ -246,6 +28,21 @@ $blue: #00d5ff;
   }
 }
 @media screen and (max-width: 768px) {
+  .Hero {
+    .HeroImg {
+      .heroText {
+        width: 100%;
+      }
+      .heroButtons h5 {
+        margin: 2vh 1.5vw;
+        border: 1px solid #fff;
+        border-radius: 35px;
+        padding: 2vh 5vw;
+        cursor: pointer;
+      }
+    }
+  }
+
   .sub2Prices {
     flex-direction: column;
     height: 100%;
