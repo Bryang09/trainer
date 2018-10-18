@@ -12,10 +12,14 @@ $blue: #00d5ff;
 @media screen and (max-width: 1170px) {
   .Sub3 {
     flex-direction: column;
+    box-shadow: none;
+
     .sub3Img {
       width: 90%;
       height: 90vh;
       margin: 0 auto 15vh;
+      background: url(https://images.pexels.com/photos/136410/pexels-photo-136410.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)
+        no-repeat 1% center/cover;
     }
 
     .sub3Text {
@@ -39,6 +43,7 @@ $blue: #00d5ff;
     }
   }
 }
+
 @media screen and (max-width: 768px) {
   .Hero {
     .HeroImg {
@@ -86,11 +91,10 @@ $blue: #00d5ff;
       }
     }
   }
-
   .Sub4 {
     .Reviews {
       flex-direction: column;
-      height: 150vh;
+      height: 100vh;
 
       .Review {
         flex-direction: row;
@@ -112,7 +116,74 @@ $blue: #00d5ff;
       }
     }
   }
+
+  .Sub5 {
+    box-shadow: none;
+    .Container {
+      flex-direction: column;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+
+      .sub5Img {
+        height: 60%;
+        width: 100%;
+        margin: 0;
+        background: url("https://images.pexels.com/photos/136394/pexels-photo-136394.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+          no-repeat center center / cover;
+      }
+      .sub5Text {
+        width: 90%;
+
+        p {
+          line-height: 31px;
+        }
+      }
+    }
+  }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
+  .Sub4 {
+    .Reviews {
+      flex-direction: column;
+      height: 150vh;
+
+      .Review {
+        flex-direction: column;
+        width: 100%;
+        margin: 2vh 0;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 0.1px solid $lightText;
+
+        .reviewImg {
+          width: 100%;
+          height: 100%;
+          margin-right: 2vw;
+        }
+
+        h4 {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  .Sub5 {
+    .sub5Text {
+      padding-top: 3vh;
+    }
+  }
+
+  .Footer {
+    h2 {
+      font-size: 16px;
+    }
+
+    h3 {
+      font-size: 14px;
+    }
+  }
 }

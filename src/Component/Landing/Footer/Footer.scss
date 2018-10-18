@@ -1,0 +1,37 @@
+$highlight: #00ff7f;
+$text: #333;
+$lightText: #8d8d8d;
+$blue: #00d5ff;
+
+.Footer {
+  height: 5vh;
+  background: $text;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    color: #fff;
+    font-weight: 400;
+    margin: 0 0 0 2vw;
+    width: 40%;
+  }
+  .links {
+    display: flex;
+    width: 60%;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 2vw;
+
+    h3 {
+      margin: 0 0.8vw;
+      cursor: pointer;
+      color: #fff;
+      font-weight: 400;
+
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+}

@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 
-import "./Sub4.scss";
-
 import Reviews from "./Reviews/Reviews";
 
 class Sub4 extends Component {
