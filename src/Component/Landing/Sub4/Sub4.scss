@@ -1,0 +1,53 @@
+$highlight: #00ff7f;
+$text: #333;
+$lightText: #8d8d8d;
+$blue: #00d5ff;
+
+.Sub4 {
+  height: 100%;
+  // background: $text;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    border-bottom: 3px solid $text;
+  }
+
+  .Reviews {
+    width: 80%;
+    // background: red;
+    height: 50vh;
+    display: flex;
+
+    .Review {
+      width: 30%;
+      margin: 0 1.5%;
+      // background: blue;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+
+      .reviewImg {
+        height: 60%;
+        border-radius: 50%;
+        width: 60%;
+        margin: 1vh auto;
+      }
+
+      .reviewText {
+        text-align: center;
+
+        h4 {
+          margin-bottom: 0.5vh;
+        }
+
+        h5 {
+          color: $blue;
+          margin: 0;
+        }
+      }
+    }
+  }
+}

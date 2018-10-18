@@ -4,13 +4,13 @@ $lightText: #8d8d8d;
 $blue: #00d5ff;
 
 .Sub3 {
-  height: 70vh;
+  height: 100%;
   // background: $text;
   display: flex;
 
   .sub3Img {
     width: 45%;
-    height: 100%;
+    height: 50vh;
     background: url("https://images.pexels.com/photos/136410/pexels-photo-136410.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
       no-repeat center center / cover;
     margin-left: 1vw;

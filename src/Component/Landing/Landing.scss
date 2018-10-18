@@ -26,6 +26,18 @@ $blue: #00d5ff;
   .sub2Prices {
     width: 90%;
   }
+  .Sub4 {
+    .Reviews {
+      width: 90%;
+      .Review {
+        .reviewImg {
+          border-radius: 0;
+          width: 100%;
+          height: 70%;
+        }
+      }
+    }
+  }
 }
 @media screen and (max-width: 768px) {
   .Hero {
@@ -71,6 +83,32 @@ $blue: #00d5ff;
         box-shadow: 0 15px 25px -7px rgba(255, 255, 255, 0.2),
           0 -12px 10px -10px rgba(255, 255, 255, 0.01);
         transition-duration: 0.5s;
+      }
+    }
+  }
+
+  .Sub4 {
+    .Reviews {
+      flex-direction: column;
+      height: 150vh;
+
+      .Review {
+        flex-direction: row;
+        width: 100%;
+        margin: 2vh 0;
+        height: 30vh;
+        justify-content: center;
+        align-items: center;
+
+        .reviewImg {
+          width: 100%;
+          height: 100%;
+          margin-right: 2vw;
+        }
+
+        h4 {
+          margin-top: 0;
+        }
       }
     }
   }
